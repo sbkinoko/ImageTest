@@ -11,15 +11,15 @@ namespace ImageTest
     {
 
         static MainWindow objMainWindow;
-        static SubWindow objEditWindow;
+        static SubWindow objSubWindow;
 
         protected override void OnStartup(StartupEventArgs e)
         {
             objMainWindow = new MainWindow();
-            objEditWindow = new SubWindow();
+            objSubWindow = new SubWindow();
 
             objMainWindow.Show();
-            objEditWindow.Show();
+            objSubWindow.Show();
         }
     }
 
