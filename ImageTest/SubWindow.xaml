@@ -11,12 +11,29 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button
-            Click="Button_Click"
-            Grid.Column="0"
-            >
-            open dialog
-        </Button>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBox
+         Grid.Row="0"
+         Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+         />
+            <Button
+         Grid.Row="1"
+         Command="{Binding TestCommand}"
+         >
+                text change
+            </Button>
+            <Button
+         Click="Button_Click"
+         Grid.Row="2"
+     >
+                open dialog
+            </Button>
+        </Grid>
         <Image
             Grid.Column="1"
             x:Name="roadedImage"

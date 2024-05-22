@@ -17,8 +17,9 @@ namespace ImageTest
     /// </summary>
     public partial class SubWindow : Window
     {
-        public SubWindow()
+        public SubWindow(AppViewModel sharedViewModel)
         {
+            this.DataContext = sharedViewModel;
             InitializeComponent();
         }
 

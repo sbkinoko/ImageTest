@@ -13,10 +13,18 @@ namespace ImageTest
         static MainWindow objMainWindow;
         static SubWindow objSubWindow;
 
+        static AppViewModel objAppViewModel;
+
         protected override void OnStartup(StartupEventArgs e)
         {
-            objMainWindow = new MainWindow();
-            objSubWindow = new SubWindow();
+            objAppViewModel = new AppViewModel();
+
+            objMainWindow = new MainWindow(
+                objAppViewModel
+                );
+            objSubWindow = new SubWindow(
+                objAppViewModel
+                );
 
             objMainWindow.Show();
             objSubWindow.Show();
