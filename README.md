@@ -6,4 +6,4 @@
 # 2 複数windowを表示　データを共有
 [プルリク](https://github.com/sbkinoko/ImageTest/pull/4/files)
 
-解説はこちら(https://sbkinoko.github.io/wpf/show_windows/show_windows)
+解説は[こちら](https://sbkinoko.github.io/wpf/show_windows/show_windows)
