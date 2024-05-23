@@ -9,6 +9,26 @@ namespace ImageTest
     /// </summary>
     public partial class App : Application
     {
+
+        static MainWindow objMainWindow;
+        static SubWindow objSubWindow;
+
+        static AppViewModel objAppViewModel;
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            objAppViewModel = new AppViewModel();
+
+            objMainWindow = new MainWindow(
+                objAppViewModel
+                );
+            objSubWindow = new SubWindow(
+                objAppViewModel
+                );
+
+            objMainWindow.Show();
+            objSubWindow.Show();
+        }
     }
 
 }

@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace ImageTest
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SubWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SubWindow : Window
     {
-        public MainWindow(AppViewModel sharedViewModel)
+        public SubWindow(AppViewModel sharedViewModel)
         {
             this.DataContext = sharedViewModel;
             InitializeComponent();
